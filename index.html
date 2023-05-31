@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buona Pizza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container d-flex mt-4 divPrincipal w-50 h-100">
+        <div class="bg-white p-4">
+            <h4 class="mb-5">MEJORA TU PIZZA</h4>
+            <p>Puede elegir 3 ingredientes gratis. Cada ingrediente adicional</p> 
+            <p class="mb-5">cuesta $800 pesos cada uno.</p>            
+            <p>
+                Ingredientes disponibles para agregar a su pizza :
+            </p>
+            <div class="d-block">
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="carne"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Carne</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="pollo"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Pollo</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="tocino"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Tocino</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="mozzarella"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Mozzarella</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="champinon"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Champiñon</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="cebolla"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Cebolla</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="pina"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Piña</p>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" name="" id="pimenton"> <p class="mt-3">&nbsp;&nbsp;&nbsp;Pimentón</p>
+                </div>
+                <p>Los ingredientes :<b id="ingredientesMostrar"></b></p>
+
+
+                <p>Los ingredientes extras son: <b id="ingredientesExtrasMostrar"></b></p>
+            </div>
+        </div>
+        <div class="bg-white p-4">
+            <h4>RESUMEN DEL PEDIDO</h4>
+            <div class="d-flex justify-content-between mt-5">
+                <input type="text" value="Pizza XL" class="txtPizza">
+                <p class="mt-4"><b id="valorPizza">$15.000</b></p>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <input type="text" value="Ingredientes Extras" class="txtPizza">
+                <p class="mt-4"><b id="idIngredientesExtras">$0</b></p>
+            </div>
+            <div class="d-flex justify-content-between mt-5">
+                <input type="text" value="Propina" class="txtPizza">
+                <p class="mt-4"><b id="propinaP">$0</b></p>
+            </div>
+            <div class="d-flex justify-content-between mt-5">                
+                <div class="input-group">
+                    <input type="text" id="txtPropina" class="form-control" placeholder="Ingrese Propina" aria-label="Ingrese su texto">
+                    <div class="input-group-append">
+                      <button class="btn btn-dark rounded-4" type="button" id="btnEnviar">Enviar</button>
+                    </div>
+                </div>
+            </div><!--Fin div-->
+            <div class="d-flex justify-content-between mt-5">
+                <h4>Total: <p id="totalId" class="mt-4">$0</p></h4>
+                
+            </div><!--Fin div-->
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

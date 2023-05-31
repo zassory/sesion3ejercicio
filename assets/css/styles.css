@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(to right,green,red);
+}
+.divPrincipal{    
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.txtPizza {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.txtPropina{
+    height: 3rem;
+}
+.sizeBoton{
+    height: 3rem!important;
+}
